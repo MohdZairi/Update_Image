@@ -52,7 +52,7 @@ $user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tb_user WHERE id =
         "
         <script>
           alert('Invalid Image Extension');
-          document.location.href = '../ImageProfilee';
+          document.location.href = '../ImageProfile';
         </script>
         ";
       }
