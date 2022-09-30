@@ -66,7 +66,7 @@ $user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tb_user WHERE id =
         ";
       }
       else{
-        $newImageName = $name . " - " . date("Y.m.d") . " - " . date("h.i.sa"); // Generate new image name
+        $newImageName = $name . " - " . date("Y.m.d"); // Generate new image name
         $newImageName .= '.' . $imageExtension;
         $query = "UPDATE tb_user SET image = '$newImageName' WHERE id = $id";
         mysqli_query($conn, $query);
